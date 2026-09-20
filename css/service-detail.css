@@ -279,6 +279,18 @@
 }
 
 
+.content-box ul,
+.text-content ul {
+    margin-bottom: 18px;
+
+    color: #60728b;
+
+    line-height: 1.9;
+
+    font-size: 16px;
+}
+
+
 /* =========================================
    AI VISUAL
 ========================================= */
