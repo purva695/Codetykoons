@@ -180,7 +180,7 @@ img {
 }
 
 .section-heading p {
-    color: var(--muted);
+    color: var(--blue-tint);
 
     max-width: 650px;
 
@@ -1824,7 +1824,7 @@ img {
 }
 
 .about-content p {
-    color: var(--muted);
+    color: #ffffff;
 
     font-size: 14px;
 
@@ -2362,9 +2362,12 @@ article {
     color: #ffffff !important;
 }
 
-.hero-small-title,
+.hero-small-title{
+    color: #a9c0da !important;
+}
+
 .eyebrow {
-    color: var(--cyan) !important;
+    color: var(--dark-card) !important;
 }
 
 .hero-subtitle,
@@ -2621,7 +2624,6 @@ p {
 /* About sections */
 
 .about-section,
-.about-content,
 .what-we-do,
 .mission-section {
     background: #071832 !important;
@@ -2867,4 +2869,273 @@ p {
             0 10px 30px rgba(0, 0, 0, 0.25) !important;
     }
 
+}
+
+/* =========================================================
+   CODETYKOONS - FINAL DARK PREMIUM THEME
+   LARGE WHITE BOX REMOVAL + SECTION DEPTH
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL BODY
+========================================================= */
+
+body {
+    background: #061B3A;
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   COMMON SECTION BACKGROUNDS
+========================================================= */
+
+.section-padding {
+    position: relative;
+}
+
+
+/* =========================================================
+   ABOUT PAGE - MAIN SECTIONS
+========================================================= */
+
+.about-section {
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(20, 91, 255, 0.10),
+            transparent 28%
+        ),
+        #061B3A !important;
+}
+
+
+/* =========================================================
+   ABOUT INTRO
+========================================================= */
+
+.about-intro,
+.intro-section {
+    background:
+        linear-gradient(
+            135deg,
+            #061B3A 0%,
+            #082653 50%,
+            #061B3A 100%
+        ) !important;
+}
+
+
+/* =========================================================
+   ABOUT CONTENT
+========================================================= */
+
+.about-content h2,
+.intro-grid h2 {
+    color: #ffffff !important;
+}
+
+.about-content h2 span,
+.intro-grid h2 span {
+    color: #55B7FF !important;
+}
+
+.about-content p,
+.intro-grid p {
+    color: #ffffff !important;
+}
+
+
+/* =========================================================
+   ABOUT VISUAL
+   Keep the visual/card effect
+========================================================= */
+
+.about-shape {
+    background:
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(85,183,255,0.25),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #0B3B78,
+            #061B3A
+        ) !important;
+
+    box-shadow:
+        0 30px 80px rgba(0,0,0,0.30),
+        0 0 60px rgba(20,91,255,0.10) !important;
+}
+
+
+/* =========================================================
+   WHAT WE DO
+========================================================= */
+
+.what-we-do {
+    background:
+        linear-gradient(
+            135deg,
+            #082653 0%,
+            #0A3165 50%,
+            #071F43 100%
+        ) !important;
+}
+
+.what-we-do .section-heading h2 {
+    color: #ffffff !important;
+}
+
+.what-we-do .section-heading p {
+    color: rgba(255,255,255,0.70) !important;
+}
+
+
+/* =========================================================
+   OUR MISSION
+   LARGE WHITE BOX REMOVED
+========================================================= */
+
+.mission-section {
+    background:
+        radial-gradient(
+            circle at 85% 30%,
+            rgba(20,91,255,0.15),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #061B3A,
+            #082653
+        ) !important;
+}
+
+
+/* REMOVE LARGE BOX */
+
+.mission-box {
+    display: grid;
+
+    grid-template-columns: 90px 1fr;
+
+    gap: 35px;
+
+    padding: 40px 0 !important;
+
+    background: transparent !important;
+
+    border: none !important;
+
+    border-radius: 0 !important;
+
+    box-shadow: none !important;
+}
+
+
+/* Mission heading */
+
+.mission-box h2 {
+    color: #ffffff !important;
+
+    font-size: clamp(
+        34px,
+        4.5vw,
+        58px
+    );
+
+    line-height: 1.12;
+}
+
+.mission-box h2 span {
+    color: #55B7FF !important;
+}
+
+
+/* Mission paragraphs */
+
+.mission-box p {
+    color: var(--blue-tint) !important;
+
+    max-width: 900px;
+
+    line-height: 1.85;
+}
+
+
+/* Mission icon remains */
+
+.mission-icon {
+    background:
+        linear-gradient(
+            135deg,
+            rgba(20,91,255,0.35),
+            rgba(85,183,255,0.12)
+        ) !important;
+
+    color: #55B7FF !important;
+
+    border:
+        1px solid
+        rgba(85,183,255,0.25);
+
+    box-shadow:
+        0 15px 40px
+        rgba(20,91,255,0.12);
+}
+
+
+/* =========================================================
+   GENERAL HEADINGS ON DARK SECTIONS
+========================================================= */
+
+.dark-section h2,
+.dark-section h3 {
+    color: #ffffff;
+}
+
+.dark-section p {
+    color: rgba(255,255,255,0.72);
+}
+
+
+/* =========================================================
+   RESPONSIVE MISSION
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .mission-box {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+
+        padding: 30px 0 !important;
+    }
+
+    .mission-icon {
+        width: 65px;
+        height: 65px;
+    }
+
+}
+
+/* =========================================
+   LOGO IMAGE
+========================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    border-radius: 8px;
 }

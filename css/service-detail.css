@@ -449,7 +449,7 @@
 .text-content p {
     margin-bottom: 18px;
 
-    color: #536b88;
+    color: var(--sd-text);
 
     line-height: 1.9;
 
@@ -477,7 +477,7 @@
 
 .content-box strong,
 .text-content strong {
-    color: #092853;
+    color: #ffffff;
 }
 
 
@@ -1692,4 +1692,61 @@
             center;
     }
 
+}
+
+/* =========================================
+   REMOVE LARGE WHITE CONTENT BOXES
+   SERVICE DETAIL PAGES
+========================================= */
+
+.service-section {
+    background: #061B3A !important;
+}
+
+.light-section {
+    background: #061B3A !important;
+}
+
+.content-box {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+
+    padding: 20px 0 !important;
+}
+
+.content-box h2,
+.content-box h3 {
+    color: #ffffff !important;
+}
+
+.content-box p,
+.content-box li {
+    color: #ffffff !important;
+}
+
+/* =========================================
+   SERVICE DETAIL BACKGROUND
+   ONLY BACKGROUND COLORS
+========================================= */
+
+.service-section {
+    background: #061B3A !important;
+}
+
+.light-section {
+    background: #092853 !important;
+}
+
+.technology-section {
+    background: #081F43 !important;
+}
+
+.process-section {
+    background: #092853 !important;
+}
+
+.software-services-section {
+    background: #081F43 !important;
 }
