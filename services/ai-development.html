@@ -1,646 +1,519 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>AI Development | CodeTykoons</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
     <!-- Main CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
 
     <!-- Service Page CSS -->
-    <link rel="stylesheet" href="../css/service-detail.css">
-</head>
+    <link rel="stylesheet" href="../css/service-detail.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- ================= NAVBAR ================= -->
 
-<!-- ================= NAVBAR ================= -->
-
-<header class="header">
-    <nav class="navbar container">
-
+    <header class="header">
+      <nav class="navbar container">
         <a href="../index.html" class="logo">
-            <img src="../images/logo.jpeg" alt="CodeTykoons Logo">
-            <span>Code<span>Tykoons</span></span>
+          <img src="../images/logo.jpeg" alt="CodeTykoons Logo" />
+          <span>Code<span>Tykoons</span></span>
         </a>
 
         <button class="menu-toggle" id="menuToggle">
-            <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars"></i>
         </button>
 
         <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="../index.html" class="active">Home</a>
+          </li>
 
-            <li>
-                <a href="../index.html" class="active">Home</a>
-            </li>
+          <li>
+            <a href="../about.html">About</a>
+          </li>
 
-            <li>
-                <a href="../about.html">About</a>
-            </li>
+          <li class="dropdown">
+            <a href="../services.html">
+              Services
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
 
-            <li class="dropdown">
-                <a href="../services.html">
-                    Services
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
+            <div class="dropdown-menu">
+              <a href="../services/ai-development.html"> AI Development </a>
 
-                <div class="dropdown-menu">
+              <a href="../services/custom-software.html"> Custom Software </a>
 
-                    <a href="../services/ai-development.html">
-                        AI Development
-                    </a>
+              <a href="../services/web-development.html"> Web Development </a>
 
-                    <a href="../services/custom-software.html">
-                        Custom Software
-                    </a>
+              <a href="../services/mobile-app-development.html">
+                Mobile App Development
+              </a>
 
-                    <a href="../services/web-development.html">
-                        Web Development
-                    </a>
+              <a href="../services/erp-business-software.html">
+                ERP & Business Software
+              </a>
 
-                    <a href="../services/mobile-app-development.html">
-                        Mobile App Development
-                    </a>
+              <a href="../services/ecommerce-development.html">
+                Ecommerce Development
+              </a>
 
-                    <a href="../services/erp-business-software.html">
-                        ERP & Business Software
-                    </a>
+              <a href="../services/cloud-it.html"> Cloud & IT Solutions </a>
 
-                    <a href="../services/ecommerce-development.html">
-                        Ecommerce Development
-                    </a>
+              <a href="../services/digital-marketing.html">
+                Digital Marketing
+              </a>
+            </div>
+          </li>
 
-                    <a href="../services/cloud-it.html">
-                        Cloud & IT Solutions
-                    </a>
+          <li>
+            <a href="../portfolio.html">Portfolio</a>
+          </li>
 
-                    <a href="../services/digital-marketing.html">
-                        Digital Marketing
-                    </a>
+          <li>
+            <a href="../blog.html">Blog</a>
+          </li>
 
-                </div>
-            </li>
+          <li>
+            <a href="../contact.html">Contact</a>
+          </li>
 
-            <li>
-                <a href="../portfolio.html">Portfolio</a>
-            </li>
-
-            <li>
-                <a href="../blog.html">Blog</a>
-            </li>
-
-            <li>
-                <a href="../contact.html">Contact</a>
-            </li>
-
-            <li class="nav-cta">
-                <a href="../contact.html">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
-            </li>
-
+          <li class="nav-cta">
+            <a href="../contact.html"
+              >Let's Talk <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </li>
         </ul>
+      </nav>
+    </header>
 
-    </nav>
-</header>
+    <!-- ================= PAGE HERO ================= -->
 
+    <section class="service-hero">
+      <div class="service-hero-glow"></div>
 
-<!-- ================= PAGE HERO ================= -->
-
-<section class="service-hero">
-
-    <div class="service-hero-glow"></div>
-
-    <div class="container">
-
+      <div class="container">
         <div class="breadcrumb">
-            <a href="../index.html">Home</a>
-            <i class="fa-solid fa-chevron-right"></i>
-            <a href="../services.html">Services</a>
-            <i class="fa-solid fa-chevron-right"></i>
-            <span>AI Development</span>
+          <a href="../index.html">Home</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <a href="../services.html">Services</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>AI Development</span>
         </div>
 
         <div class="service-hero-content">
-
+          <!-- Left Content -->
+          <div class="service-hero-text">
             <div class="service-hero-icon">
-                <i class="fa-solid fa-brain"></i>
+              <i class="fa-solid fa-brain"></i>
             </div>
 
             <span class="small-heading">AI SOLUTIONS</span>
 
-            <h1>
-                AI <span>Development</span>
-            </h1>
+            <h1>AI <span>Development</span></h1>
 
             <p>
-                We build intelligent AI-powered solutions that help businesses
-                create smarter experiences, automate operations and make
-                data-driven decisions.
+              We build intelligent AI-powered solutions that help businesses
+              create smarter experiences, automate operations and make
+              data-driven decisions.
             </p>
 
             <a href="../contact.html" class="btn btn-primary">
-                Discuss Your AI Project
-                <i class="fa-solid fa-arrow-right"></i>
+              Discuss Your AI Project
+              <i class="fa-solid fa-arrow-right"></i>
             </a>
+          </div>
 
+          <!-- Right Image -->
+          <div class="service-hero-image">
+            <img
+              src="../images/aidevelopment-hero.jpg"
+              alt="AI Development Solutions"
+            />
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-</section>
+    <!-- ================= INTRO ================= -->
 
-
-<!-- ================= INTRO ================= -->
-
-<section class="service-section">
-
-    <div class="container">
-
+    <section class="service-section">
+      <div class="container">
         <div class="section-heading">
+          <span class="section-tag">AI DEVELOPMENT</span>
 
-            <span class="section-tag">AI DEVELOPMENT</span>
+          <h2>
+            Build Smarter Solutions With
+            <span>Artificial Intelligence</span>
+          </h2>
 
-            <h2>
-                Build Smarter Solutions With
-                <span>Artificial Intelligence</span>
-            </h2>
-
-            <p>
-                Our AI development services help businesses build intelligent
-                applications, automate repetitive processes and unlock valuable
-                insights from their data.
-            </p>
-
+          <p>
+            Our AI development services help businesses build intelligent
+            applications, automate repetitive processes and unlock valuable
+            insights from their data.
+          </p>
         </div>
-
 
         <div class="content-grid">
+          <div class="content-box">
+            <h3>AI Development</h3>
 
-            <div class="content-box">
+            <p>
+              At CodeTykoons, we provide AI development services to help
+              businesses build next-generation applications that improve
+              productivity, enhance customer experiences and support smarter
+              decision-making.
+            </p>
 
-                <h3>AI Development</h3>
+            <p>
+              We work with modern Artificial Intelligence technologies,
+              Generative AI applications, AI chatbots, RAG systems, machine
+              learning solutions and AI-powered business systems.
+            </p>
 
-                <p>
-                    At CodeTykoons, we provide AI development services to help
-                    businesses build next-generation applications that improve
-                    productivity, enhance customer experiences and support
-                    smarter decision-making.
-                </p>
+            <p>
+              Whether you need an AI-powered product, automation solution or an
+              intelligent business application, our team can help you turn your
+              idea into a practical AI solution.
+            </p>
+          </div>
 
-                <p>
-                    We work with modern Artificial Intelligence technologies,
-                    Generative AI applications, AI chatbots, RAG systems,
-                    machine learning solutions and AI-powered business systems.
-                </p>
+          <div class="content-visual">
+            <div class="ai-orbit">
+              <div class="orbit-center">
+                <i class="fa-solid fa-brain"></i>
+              </div>
 
-                <p>
-                    Whether you need an AI-powered product, automation solution
-                    or an intelligent business application, our team can help
-                    you turn your idea into a practical AI solution.
-                </p>
+              <span class="orbit-item item-1">
+                <i class="fa-solid fa-robot"></i>
+              </span>
 
+              <span class="orbit-item item-2">
+                <i class="fa-solid fa-microchip"></i>
+              </span>
+
+              <span class="orbit-item item-3">
+                <i class="fa-solid fa-chart-line"></i>
+              </span>
+
+              <span class="orbit-item item-4">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+              </span>
             </div>
-
-
-            <div class="content-visual">
-
-                <div class="ai-orbit">
-
-                    <div class="orbit-center">
-                        <i class="fa-solid fa-brain"></i>
-                    </div>
-
-                    <span class="orbit-item item-1">
-                        <i class="fa-solid fa-robot"></i>
-                    </span>
-
-                    <span class="orbit-item item-2">
-                        <i class="fa-solid fa-microchip"></i>
-                    </span>
-
-                    <span class="orbit-item item-3">
-                        <i class="fa-solid fa-chart-line"></i>
-                    </span>
-
-                    <span class="orbit-item item-4">
-                        <i class="fa-solid fa-wand-magic-sparkles"></i>
-                    </span>
-
-                </div>
-
-            </div>
-
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- ================= WHAT IS AI ================= -->
 
-</section>
-
-
-<!-- ================= WHAT IS AI ================= -->
-
-<section class="service-section light-section">
-
-    <div class="container">
-
+    <section class="service-section light-section">
+      <div class="container">
         <div class="section-heading left-heading">
+          <span class="section-tag">UNDERSTANDING AI</span>
 
-            <span class="section-tag">UNDERSTANDING AI</span>
-
-            <h2>
-                What Is <span>AI Development?</span>
-            </h2>
-
+          <h2>What Is <span>AI Development?</span></h2>
         </div>
-
 
         <div class="text-content">
+          <p>
+            The process of Artificial Intelligence development focuses on the
+            creation of software and applications that have the ability to
+            understand information, learn from data, recognize patterns and
+            support intelligent decision-making.
+          </p>
 
-            <p>
-                The process of Artificial Intelligence development focuses on
-                the creation of software and applications that have the ability
-                to understand information, learn from data, recognize patterns
-                and support intelligent decision-making.
-            </p>
+          <p>
+            The latest advancements in the field of Artificial Intelligence
+            allow businesses to build innovative applications for automation,
+            customer interaction, personalized experiences and intelligent
+            workflows.
+          </p>
 
-            <p>
-                The latest advancements in the field of Artificial Intelligence
-                allow businesses to build innovative applications for
-                automation, customer interaction, personalized experiences
-                and intelligent workflows.
-            </p>
-
-            <p>
-                Our AI development approach focuses on creating practical,
-                scalable and business-oriented solutions that can be integrated
-                into real-world workflows.
-            </p>
-
+          <p>
+            Our AI development approach focuses on creating practical, scalable
+            and business-oriented solutions that can be integrated into
+            real-world workflows.
+          </p>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- ================= OUR AI SERVICES ================= -->
 
-</section>
-
-
-<!-- ================= OUR AI SERVICES ================= -->
-
-<section class="service-section">
-
-    <div class="container">
-
+    <section class="service-section">
+      <div class="container">
         <div class="section-heading">
+          <span class="section-tag">OUR SERVICES</span>
 
-            <span class="section-tag">OUR SERVICES</span>
-
-            <h2>
-                Our AI Development <span>Services</span>
-            </h2>
-
+          <h2>Our AI Development <span>Services</span></h2>
         </div>
-
 
         <div class="service-detail-grid">
-
-            <div class="detail-card">
-                <div class="detail-icon">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                </div>
-                <h3>Generative AI Development</h3>
-                <p>
-                    Build intelligent applications using modern Generative AI
-                    technologies.
-                </p>
+          <div class="detail-card">
+            <div class="detail-icon">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
             </div>
-
-
-            <div class="detail-card">
-                <div class="detail-icon">
-                    <i class="fa-solid fa-cubes"></i>
-                </div>
-                <h3>AI-Powered Products</h3>
-                <p>
-                    Develop smart products with AI-powered features and
-                    intelligent workflows.
-                </p>
-            </div>
-
-
-            <div class="detail-card">
-                <div class="detail-icon">
-                    <i class="fa-solid fa-robot"></i>
-                </div>
-                <h3>AI Chatbot Development</h3>
-                <p>
-                    Create intelligent conversational systems for customer
-                    support and business operations.
-                </p>
-            </div>
-
-
-            <div class="detail-card">
-                <div class="detail-icon">
-                    <i class="fa-solid fa-database"></i>
-                </div>
-                <h3>RAG Application Development</h3>
-                <p>
-                    Build AI applications that can retrieve and use relevant
-                    business information.
-                </p>
-            </div>
-
-
-            <div class="detail-card">
-                <div class="detail-icon">
-                    <i class="fa-solid fa-gears"></i>
-                </div>
-                <h3>AI Automation</h3>
-                <p>
-                    Automate repetitive business processes with intelligent
-                    AI-driven workflows.
-                </p>
-            </div>
-
-
-            <div class="detail-card">
-                <div class="detail-icon">
-                    <i class="fa-solid fa-plug"></i>
-                </div>
-                <h3>AI Integration & APIs</h3>
-                <p>
-                    Integrate AI capabilities with existing applications,
-                    systems and business APIs.
-                </p>
-            </div>
-
-
-            <div class="detail-card">
-                <div class="detail-icon">
-                    <i class="fa-solid fa-chart-column"></i>
-                </div>
-                <h3>Machine Learning Solutions</h3>
-                <p>
-                    Develop machine learning solutions for prediction,
-                    classification and intelligent decision-making.
-                </p>
-            </div>
-
-
-            <div class="detail-card">
-                <div class="detail-icon">
-                    <i class="fa-solid fa-lightbulb"></i>
-                </div>
-                <h3>AI-Powered Business Intelligence</h3>
-                <p>
-                    Transform business data into useful insights with
-                    intelligent analytics and AI.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= TECHNOLOGIES ================= -->
-
-<section class="service-section technology-section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-tag">TECHNOLOGY STACK</span>
-
-            <h2>
-                AI Technologies <span>We Work With</span>
-            </h2>
-
+            <h3>Generative AI Development</h3>
             <p>
-                We use modern AI technologies and development platforms to
-                build scalable intelligent solutions.
+              Build intelligent applications using modern Generative AI
+              technologies.
             </p>
+          </div>
 
+          <div class="detail-card">
+            <div class="detail-icon">
+              <i class="fa-solid fa-cubes"></i>
+            </div>
+            <h3>AI-Powered Products</h3>
+            <p>
+              Develop smart products with AI-powered features and intelligent
+              workflows.
+            </p>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-icon">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <h3>AI Chatbot Development</h3>
+            <p>
+              Create intelligent conversational systems for customer support and
+              business operations.
+            </p>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-icon">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h3>RAG Application Development</h3>
+            <p>
+              Build AI applications that can retrieve and use relevant business
+              information.
+            </p>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-icon">
+              <i class="fa-solid fa-gears"></i>
+            </div>
+            <h3>AI Automation</h3>
+            <p>
+              Automate repetitive business processes with intelligent AI-driven
+              workflows.
+            </p>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-icon">
+              <i class="fa-solid fa-plug"></i>
+            </div>
+            <h3>AI Integration & APIs</h3>
+            <p>
+              Integrate AI capabilities with existing applications, systems and
+              business APIs.
+            </p>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-icon">
+              <i class="fa-solid fa-chart-column"></i>
+            </div>
+            <h3>Machine Learning Solutions</h3>
+            <p>
+              Develop machine learning solutions for prediction, classification
+              and intelligent decision-making.
+            </p>
+          </div>
+
+          <div class="detail-card">
+            <div class="detail-icon">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <h3>AI-Powered Business Intelligence</h3>
+            <p>
+              Transform business data into useful insights with intelligent
+              analytics and AI.
+            </p>
+          </div>
         </div>
+      </div>
+    </section>
 
+    <!-- ================= TECHNOLOGIES ================= -->
+
+    <section class="service-section technology-section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-tag">TECHNOLOGY STACK</span>
+
+          <h2>AI Technologies <span>We Work With</span></h2>
+
+          <p>
+            We use modern AI technologies and development platforms to build
+            scalable intelligent solutions.
+          </p>
+        </div>
 
         <div class="tech-grid">
+          <div class="tech-card">
+            <i class="fa-solid fa-brain"></i>
+            <h3>AI & LLMs</h3>
+            <p>Large Language Models, AI APIs and intelligent applications.</p>
+          </div>
 
-            <div class="tech-card">
-                <i class="fa-solid fa-brain"></i>
-                <h3>AI & LLMs</h3>
-                <p>
-                    Large Language Models, AI APIs and intelligent applications.
-                </p>
-            </div>
+          <div class="tech-card">
+            <i class="fa-solid fa-network-wired"></i>
+            <h3>AI Frameworks</h3>
+            <p>Modern frameworks and libraries for building AI solutions.</p>
+          </div>
 
+          <div class="tech-card">
+            <i class="fa-brands fa-python"></i>
+            <h3>AI Programming</h3>
+            <p>Python-based development for AI and machine learning.</p>
+          </div>
 
-            <div class="tech-card">
-                <i class="fa-solid fa-network-wired"></i>
-                <h3>AI Frameworks</h3>
-                <p>
-                    Modern frameworks and libraries for building AI solutions.
-                </p>
-            </div>
+          <div class="tech-card">
+            <i class="fa-solid fa-database"></i>
+            <h3>Data & Analytics</h3>
+            <p>Data processing, analytics and intelligent data solutions.</p>
+          </div>
 
-
-            <div class="tech-card">
-                <i class="fa-brands fa-python"></i>
-                <h3>AI Programming</h3>
-                <p>
-                    Python-based development for AI and machine learning.
-                </p>
-            </div>
-
-
-            <div class="tech-card">
-                <i class="fa-solid fa-database"></i>
-                <h3>Data & Analytics</h3>
-                <p>
-                    Data processing, analytics and intelligent data solutions.
-                </p>
-            </div>
-
-
-            <div class="tech-card">
-                <i class="fa-solid fa-cloud"></i>
-                <h3>Cloud & Deployment</h3>
-                <p>
-                    Cloud-based infrastructure for scalable AI applications.
-                </p>
-            </div>
-
+          <div class="tech-card">
+            <i class="fa-solid fa-cloud"></i>
+            <h3>Cloud & Deployment</h3>
+            <p>Cloud-based infrastructure for scalable AI applications.</p>
+          </div>
         </div>
-
 
         <div class="tech-tags">
-
-            <span>Python</span>
-            <span>LLMs</span>
-            <span>AI APIs</span>
-            <span>RAG</span>
-            <span>AI Agents</span>
-            <span>Machine Learning</span>
-            <span>Generative AI</span>
-            <span>LangChain</span>
-            <span>MongoDB</span>
-            <span>Redis</span>
-
+          <span>Python</span>
+          <span>LLMs</span>
+          <span>AI APIs</span>
+          <span>RAG</span>
+          <span>AI Agents</span>
+          <span>Machine Learning</span>
+          <span>Generative AI</span>
+          <span>LangChain</span>
+          <span>MongoDB</span>
+          <span>Redis</span>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- ================= CTA ================= -->
 
-</section>
-
-
-<!-- ================= CTA ================= -->
-
-<section class="service-cta">
-
-    <div class="container">
-
+    <section class="service-cta">
+      <div class="container">
         <div class="cta-box">
+          <div>
+            <span class="section-tag">START YOUR PROJECT</span>
 
-            <div>
-                <span class="section-tag">START YOUR PROJECT</span>
+            <h2>
+              Have an AI Idea?
+              <br />
+              Let's Build It Together.
+            </h2>
 
-                <h2>
-                    Have an AI Idea?
-                    <br>
-                    Let's Build It Together.
-                </h2>
+            <p>Turn your AI idea into a practical and scalable solution.</p>
+          </div>
 
-                <p>
-                    Turn your AI idea into a practical and scalable solution.
-                </p>
-            </div>
-
-            <a href="../contact.html" class="white-btn">
-                Talk to Our Team
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
+          <a href="../contact.html" class="white-btn">
+            Talk to Our Team
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- ================= FOOTER ================= -->
 
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer class="footer">
-
-    <div class="container footer-grid">
-
+    <footer class="footer">
+      <div class="container footer-grid">
         <div class="footer-about">
+          <a href="../index.html" class="logo footer-logo">
+            <img src="../images/logo.jpeg" alt="CodeTykoons Logo" />
+            <span>Code<span>Tykoons</span></span>
+          </a>
 
-            <a href="../index.html" class="logo footer-logo">
-                <img src="../images/logo.jpeg" alt="CodeTykoons Logo">
-                <span>Code<span>Tykoons</span></span>
-            </a>
+          <p>
+            Innovative technology solutions for businesses, enterprises and
+            startups.
+          </p>
 
-            <p>
-                Innovative technology solutions for businesses,
-                enterprises and startups.
-            </p>
-
-            <div class="social-links">
-
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-
-            </div>
-
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
         </div>
-
 
         <div class="footer-column">
+          <h4>Company</h4>
 
-            <h4>Company</h4>
-
-            <a href="../about.html">About Us</a>
-            <a href="../services.html">Services</a>
-            <a href="../blog.html">Blog</a>
-            <a href="../contact.html">Contact</a>
-
+          <a href="../about.html">About Us</a>
+          <a href="../services.html">Services</a>
+          <a href="../blog.html">Blog</a>
+          <a href="../contact.html">Contact</a>
         </div>
 
+        <div class="footer-column">
+          <h4>Services</h4>
 
-         <div class="footer-column">
+          <a href="../services/ai-development.html"> AI Development </a>
 
-            <h4>Services</h4>
+          <a href="../services/custom-software.html"> Custom Software </a>
 
-            <a href="../services/ai-development.html">
-                AI Development
-            </a>
+          <a href="../services/web-development.html"> Web Development </a>
 
-            <a href="../services/custom-software.html">
-                Custom Software
-            </a>
+          <a href="../services/mobile-app-development.html">
+            Mobile App Development
+          </a>
 
-            <a href="../services/web-development.html">
-                Web Development
-            </a>
-
-            <a href="../services/mobile-app-development.html">
-                Mobile App Development
-            </a>
-
-            <a href="../services/ecommerce-development.html">
-                Ecommerce Development
-            </a>
-
+          <a href="../services/ecommerce-development.html">
+            Ecommerce Development
+          </a>
         </div>
-
 
         <div class="footer-column footer-contact">
+          <h4>Contact Us</h4>
 
-            <h4>Contact Us</h4>
+          <a href="mailto:CodeTykoons@gmail.com">
+            <i class="fa-regular fa-envelope"></i>
+            CodeTykoons@gmail.com
+          </a>
 
-            <a href="mailto:CodeTykoons@gmail.com">
-                <i class="fa-regular fa-envelope"></i>
-                CodeTykoons@gmail.com
-            </a>
+          <a href="tel:+916375777464">
+            <i class="fa-solid fa-phone"></i>
+            +91 63757 77464
+          </a>
 
-            <a href="tel:+916375777464">
-                <i class="fa-solid fa-phone"></i>
-                +91 63757 77464
-            </a>
-
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                Jagatpura , Jaipur
-            </p>
-
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Jagatpura , Jaipur
+          </p>
         </div>
+      </div>
 
-    </div>
-
-
-    <div class="footer-bottom">
-
+      <div class="footer-bottom">
         <div class="container">
-
-            <p>
-                © 2026 CodeTykoons. All Rights Reserved.
-            </p>
-
+          <p>© 2026 CodeTykoons. All Rights Reserved.</p>
         </div>
+      </div>
+    </footer>
 
-    </div>
-
-</footer>
-
-
-<script src="../js/script.js"></script>
-
-</body>
+    <script src="../js/script.js"></script>
+  </body>
 </html>
