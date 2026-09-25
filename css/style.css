@@ -3518,3 +3518,350 @@ body {
     }
 
 }
+
+/* =========================================
+   SERVICES PAGE HERO
+========================================= */
+
+.page-hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.page-hero-content {
+    max-width: 700px;
+}
+
+.page-hero-content h1 {
+    margin-top: 10px;
+}
+
+.page-hero-content h1 span {
+    display: block;
+}
+
+.page-hero-content p {
+    max-width: 620px;
+}
+
+
+/* =========================================
+   RIGHT SIDE TECH VISUAL
+========================================= */
+
+.page-hero-visual {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-tech-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 28px;
+    border-radius: 24px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(20, 42, 75, 0.95),
+            rgba(7, 24, 50, 0.95)
+        );
+
+    border: 1px solid rgba(90, 170, 255, 0.20);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.35),
+        inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* Glow */
+
+.service-tech-card::before {
+    content: "";
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    top: -80px;
+    right: -60px;
+
+    background: rgba(50, 150, 255, 0.18);
+
+    filter: blur(50px);
+    border-radius: 50%;
+}
+
+
+/* Top */
+
+.tech-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #ffffff;
+    font-size: 14px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.tech-card-top span:first-child {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.tech-card-top i {
+    color: #55aaff;
+}
+
+
+/* Status */
+
+.status-dot {
+    width: 9px;
+    height: 9px;
+
+    border-radius: 50%;
+    background: #55aaff;
+
+    box-shadow: 0 0 14px rgba(85, 170, 255, 0.8);
+}
+
+
+/* Main Icon */
+
+.tech-main-icon {
+    width: 80px;
+    height: 80px;
+
+    margin: 35px auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 22px;
+
+    background: rgba(55, 150, 255, 0.10);
+
+    border: 1px solid rgba(85, 170, 255, 0.20);
+
+    color: #66b5ff;
+
+    font-size: 34px;
+
+    box-shadow:
+        0 0 35px rgba(50, 150, 255, 0.12);
+}
+
+.service-tech-card h3 {
+    text-align: center;
+
+    color: #ffffff;
+
+    font-size: 23px;
+    margin-bottom: 7px;
+}
+
+.service-tech-card > p {
+    text-align: center;
+
+    color: rgba(255, 255, 255, 0.62);
+
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+
+/* Services */
+
+.tech-services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+
+    position: relative;
+    z-index: 2;
+}
+
+.tech-services div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 13px 12px;
+
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.045);
+
+    border: 1px solid rgba(255, 255, 255, 0.07);
+
+    color: rgba(255, 255, 255, 0.80);
+
+    font-size: 12px;
+
+    transition: 0.3s ease;
+}
+
+.tech-services div:hover {
+    transform: translateY(-3px);
+
+    background: rgba(60, 150, 255, 0.10);
+
+    border-color: rgba(85, 170, 255, 0.25);
+}
+
+.tech-services i {
+    color: #5daeff;
+    font-size: 14px;
+}
+
+/* Services Hero - proper left/right spacing */
+
+.page-hero .container {
+    width: min(1200px, calc(100% - 80px));
+    margin: 0 auto;
+    padding: 0;
+}
+
+.page-hero-grid {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* =========================================
+   COMPACT SERVICES PAGE HERO
+========================================= */
+
+.page-hero {
+    padding: 65px 0 !important;
+}
+
+.page-hero-grid {
+    gap: 45px;
+}
+
+.page-hero-content h1 {
+    margin-top: 05px;
+    margin-bottom: 10px;
+}
+
+.page-hero-content p {
+    margin-bottom: 0;
+}
+
+
+/* Right Visual */
+.service-tech-card {
+    max-width: 390px;
+    padding: 22px;
+}
+
+.tech-main-icon {
+    width: 68px;
+    height: 68px;
+    margin: 25px auto 15px;
+    font-size: 29px;
+}
+
+.service-tech-card h3 {
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.service-tech-card > p {
+    margin-bottom: 18px;
+}
+
+.tech-services {
+    gap: 9px;
+}
+
+.tech-services div {
+    padding: 10px;
+}
+
+
+/* Desktop spacing */
+.page-hero .container {
+    width: min(1200px, calc(100% - 80px));
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    .page-hero {
+        padding: 45px 0 !important;
+    }
+
+    .page-hero .container {
+        width: calc(100% - 40px);
+    }
+
+    .page-hero-grid {
+        gap: 30px;
+    }
+
+    .service-tech-card {
+        max-width: 100%;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .page-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .page-hero-content {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .page-hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .page-hero-visual {
+        margin-top: 5px;
+    }
+
+    .service-tech-card {
+        max-width: 420px;
+        padding: 22px;
+    }
+
+    .tech-main-icon {
+        width: 70px;
+        height: 70px;
+        margin-top: 25px;
+    }
+
+    .tech-services {
+        gap: 9px;
+    }
+
+}

@@ -1889,3 +1889,1781 @@
     }
 
 }
+/* =================================
+   UNDERSTANDING AI SECTION
+================================= */
+
+.ai-understanding-grid {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 70px;
+}
+
+.ai-understanding-image {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ai-understanding-image::before {
+    content: "";
+    position: absolute;
+
+    width: 280px;
+    height: 280px;
+
+    background: rgba(37, 135, 255, 0.12);
+    filter: blur(80px);
+    border-radius: 50%;
+
+    z-index: 0;
+}
+
+.ai-understanding-image img {
+    width: 100%;
+    max-width: 520px;
+    height: 380px;
+
+    object-fit: cover;
+    display: block;
+
+    position: relative;
+    z-index: 1;
+
+    border-radius: 26px;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+.ai-understanding-content {
+    max-width: 700px;
+}
+
+.ai-understanding-content .text-content p {
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+.software-visual {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.software-visual img {
+    width: 100%;
+    max-width: 520px;
+    height: 390px;
+    object-fit: cover;
+    display: block;
+    border-radius: 24px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.20);
+}
+
+/* =========================================
+   WEB DEVELOPMENT CONTENT SECTIONS
+========================================= */
+
+.web-section-row,
+.reverse-section-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+.web-section-row .content-box,
+.reverse-section-row .content-box {
+    width: 100%;
+}
+
+.web-section-row .content-visual,
+.reverse-section-row .content-visual {
+    width: 100%;
+    min-height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================================
+   AI CHATBOT
+========================================= */
+
+.chatbot-card {
+    width: 100%;
+    max-width: 440px;
+    background: #0b1220;
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+}
+
+.chatbot-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 22px;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    color: #e5e7eb;
+    font-weight: 600;
+}
+
+.chatbot-header i {
+    color: #60a5fa;
+    font-size: 20px;
+}
+
+.chat-status {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #4ade80;
+    margin-left: auto;
+}
+
+.chatbot-body {
+    padding: 22px;
+}
+
+.chat-message {
+    max-width: 82%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    margin-bottom: 14px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.chat-message.bot {
+    background: #172033;
+    color: #dbeafe;
+}
+
+.chat-message.user {
+    background: #2563eb;
+    color: white;
+    margin-left: auto;
+}
+
+.chat-input {
+    margin-top: 22px;
+    padding: 12px 15px;
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #64748b;
+    font-size: 13px;
+}
+
+.chat-input i {
+    color: #60a5fa;
+}
+
+
+/* =========================================
+   AUTOMATION
+========================================= */
+
+.automation-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 22px;
+    background: #0b1220;
+    border: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+}
+
+.automation-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #e5e7eb;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.automation-title i {
+    color: #60a5fa;
+    font-size: 21px;
+}
+
+.workflow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.workflow-step {
+    width: 90px;
+    height: 90px;
+    border-radius: 16px;
+    background: #172033;
+    border: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    color: #e2e8f0;
+    font-size: 12px;
+}
+
+.workflow-step i {
+    font-size: 24px;
+    color: #60a5fa;
+}
+
+.workflow-arrow {
+    color: #64748b;
+    font-size: 15px;
+}
+
+.automation-status {
+    margin-top: 30px;
+    padding: 12px;
+    border-radius: 10px;
+    background: rgba(34,197,94,0.08);
+    color: #86efac;
+    text-align: center;
+    font-size: 13px;
+}
+
+.status-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #4ade80;
+    margin-right: 7px;
+}
+
+/* =========================================
+   COMPACT WEB DEVELOPMENT SECTIONS
+========================================= */
+
+.service-section {
+    padding: 60px 0 !important;
+}
+
+.service-section .section-heading {
+    margin-bottom: 35px;
+}
+
+.web-section-row,
+.reverse-section-row {
+    gap: 45px;
+}
+
+/* Visual ka size same/controlled rahe */
+.web-section-row .content-visual,
+.reverse-section-row .content-visual {
+    min-height: 0 !important;
+}
+
+/* Content ko unnecessarily tall na hone do */
+.web-section-row .content-box,
+.reverse-section-row .content-box {
+    padding: 0 !important;
+}
+
+/* Paragraph spacing compact */
+.web-section-row .content-box p,
+.reverse-section-row .content-box p {
+    margin-bottom: 12px;
+    line-height: 1.7;
+}
+
+/* Lists compact */
+.web-section-row .content-box ul,
+.reverse-section-row .content-box ul {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.web-section-row .content-box li,
+.reverse-section-row .content-box li {
+    margin-bottom: 5px;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .service-section {
+        padding: 45px 0 !important;
+    }
+
+    .service-section .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .web-section-row,
+    .reverse-section-row {
+        gap: 30px;
+    }
+
+}
+
+
+/* ================================
+   WEB DEVELOPMENT SECTIONS
+   COMPACT SECTION + NORMAL VISUAL
+================================ */
+
+/* Overall section ko compact rakho */
+.service-section {
+    padding: 60px 0 !important;
+}
+
+/* Heading ke neeche extra space kam */
+.service-section .section-heading {
+    margin-bottom: 35px !important;
+}
+
+/* Content + Visual layout */
+.web-section-row,
+.reverse-section-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+/* ================================
+   VISUAL AREA
+   ================================ */
+
+.web-section-row .content-visual,
+.reverse-section-row .content-visual {
+    width: 100%;
+    min-height: 360px !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* API visual specifically */
+.api-visual {
+    min-height: 360px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* API card ka actual size */
+.api-card {
+    width: 100%;
+    max-width: 460px;
+    min-height: 270px;
+
+    padding: 28px;
+
+    border-radius: 20px;
+    box-sizing: border-box;
+
+    background: #0b1220;
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow: 0 25px 55px rgba(0,0,0,0.25);
+}
+
+/* ================================
+   CONTENT AREA
+================================ */
+
+.web-section-row .content-box,
+.reverse-section-row .content-box {
+    width: 100%;
+    padding: 0 !important;
+}
+
+/* Paragraph spacing */
+.web-section-row .content-box p,
+.reverse-section-row .content-box p {
+    margin-bottom: 14px;
+    line-height: 1.7;
+}
+
+/* List compact but readable */
+.web-section-row .content-box ul,
+.reverse-section-row .content-box ul {
+    margin-top: 12px;
+    margin-bottom: 14px;
+    padding-left: 20px;
+}
+
+.web-section-row .content-box li,
+.reverse-section-row .content-box li {
+    margin-bottom: 6px;
+}
+
+
+/* ================================
+   API CARD
+================================ */
+
+.api-top {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.api-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-family: monospace;
+}
+
+.api-progress {
+    width: 100%;
+    height: 6px;
+    margin-top: 18px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.08);
+    overflow: hidden;
+}
+
+.api-progress span {
+    display: block;
+    width: 75%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+    .service-section {
+        padding: 45px 0 !important;
+    }
+
+    .service-section .section-heading {
+        margin-bottom: 30px !important;
+    }
+
+    .web-section-row,
+    .reverse-section-row {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .web-section-row .content-visual,
+    .reverse-section-row .content-visual,
+    .api-visual {
+        min-height: 300px !important;
+    }
+
+    .api-card {
+        max-width: 100%;
+        min-height: 250px;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .web-section-row,
+    .reverse-section-row {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .web-section-row .content-visual,
+    .reverse-section-row .content-visual {
+        min-height: 320px;
+    }
+
+    /*
+       Mobile par visual ko content ke baad/pehle
+       naturally stack hone diya jayega.
+    */
+
+    .chatbot-card,
+    .automation-card,
+    .web-code-card,
+    .api-card {
+        max-width: 500px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .workflow {
+        gap: 6px;
+    }
+
+    .workflow-step {
+        width: 75px;
+        height: 75px;
+    }
+
+    .workflow-step i {
+        font-size: 20px;
+    }
+
+    .workflow-step span {
+        font-size: 10px;
+    }
+
+    .workflow-arrow {
+        font-size: 11px;
+    }
+
+    .automation-card {
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .software-visual img {
+        height: 300px;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .ai-understanding-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .ai-understanding-content {
+        max-width: 100%;
+    }
+
+    .ai-understanding-image img {
+        height: 300px;
+    }
+
+}
+@media (max-width: 768px) {
+
+    .content-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .content-visual img {
+        height: 300px;
+    }
+
+}
+
+/* =========================================================
+   MOBILE APP DEVELOPMENT SECTIONS
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   COMMON LAYOUT
+--------------------------------------------------------- */
+
+.mobile-section-row,
+.reverse-mobile-section-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 50px;
+}
+
+
+/* Content area */
+.mobile-section-row .content-box,
+.reverse-mobile-section-row .content-box {
+    width: 100%;
+    padding: 0 !important;
+}
+
+
+/* Paragraph spacing */
+.mobile-section-row .content-box p,
+.reverse-mobile-section-row .content-box p {
+    margin-bottom: 14px;
+    line-height: 1.7;
+}
+
+
+/* ---------------------------------------------------------
+   VISUAL AREA
+--------------------------------------------------------- */
+
+.mobile-section-row .content-visual,
+.reverse-mobile-section-row .content-visual {
+    width: 100%;
+    min-height: 360px !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================================================
+   1. MOBILE PHONE MOCKUP
+========================================================= */
+
+.mobile-app-visual {
+    min-height: 360px !important;
+}
+
+
+.phone-mockup {
+    width: 250px;
+    height: 500px;
+
+    padding: 9px;
+
+    border-radius: 38px;
+
+    background: #111827;
+
+    border: 2px solid rgba(255,255,255,0.12);
+
+    box-shadow:
+        0 30px 70px rgba(0,0,0,0.35),
+        0 0 50px rgba(59,130,246,0.10);
+
+    position: relative;
+}
+
+
+/* Speaker */
+.phone-speaker {
+    position: absolute;
+
+    top: 15px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 65px;
+    height: 5px;
+
+    border-radius: 10px;
+
+    background: #050b16;
+
+    z-index: 5;
+}
+
+
+/* Phone screen */
+.phone-screen {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            180deg,
+            #111c32 0%,
+            #0b1220 100%
+        );
+
+    padding: 35px 18px 15px;
+
+    box-sizing: border-box;
+}
+
+
+/* App Header */
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #e5e7eb;
+
+    font-size: 13px;
+
+    margin-bottom: 28px;
+}
+
+.app-header i {
+    font-size: 14px;
+}
+
+
+/* Welcome */
+
+.app-welcome {
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+
+    margin-bottom: 20px;
+}
+
+.app-welcome small {
+    color: #94a3b8;
+    font-size: 10px;
+}
+
+.app-welcome strong {
+    color: #f8fafc;
+    font-size: 18px;
+}
+
+
+/* Mini Cards */
+
+.app-card-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-bottom: 15px;
+}
+
+.app-mini-card {
+    padding: 14px 8px;
+
+    border-radius: 13px;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.07);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #dbeafe;
+
+    font-size: 10px;
+}
+
+.app-mini-card i {
+    font-size: 17px;
+}
+
+
+/* Growth Card */
+
+.app-progress-card {
+    padding: 15px;
+
+    border-radius: 14px;
+
+    background: rgba(255,255,255,0.05);
+
+    border: 1px solid rgba(255,255,255,0.07);
+
+    color: #e5e7eb;
+
+    font-size: 11px;
+}
+
+.app-progress {
+    width: 100%;
+    height: 6px;
+
+    margin: 12px 0 7px;
+
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.08);
+
+    overflow: hidden;
+}
+
+.app-progress span {
+    display: block;
+
+    width: 78%;
+    height: 100%;
+
+    border-radius: 10px;
+}
+
+.app-progress-card small {
+    color: #94a3b8;
+    font-size: 9px;
+}
+
+
+/* Bottom Navigation */
+
+.app-bottom-nav {
+    display: flex;
+    justify-content: space-around;
+
+    margin-top: 25px;
+
+    color: #64748b;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   2. MOBILE FEATURES CARD
+========================================================= */
+
+.mobile-features-visual {
+    min-height: 360px !important;
+}
+
+
+.mobile-features-card {
+    width: 100%;
+    max-width: 450px;
+
+    padding: 25px;
+
+    border-radius: 22px;
+
+    background: #0b1220;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+
+    box-sizing: border-box;
+}
+
+
+/* Title */
+
+.features-title {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    color: #f1f5f9;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    padding-bottom: 20px;
+
+    margin-bottom: 8px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+
+/* Feature Item */
+
+.feature-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 13px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.feature-item:last-child {
+    border-bottom: none;
+}
+
+
+/* Icon */
+
+.feature-icon {
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    border-radius: 11px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(59,130,246,0.10);
+
+    font-size: 15px;
+}
+
+
+/* Text */
+
+.feature-item div:last-child {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+.feature-item strong {
+    color: #e5e7eb;
+
+    font-size: 13px;
+}
+
+.feature-item span {
+    color: #94a3b8;
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   3. MOBILE INTEGRATION IMAGE
+========================================================= */
+
+.mobile-image-visual {
+    min-height: 360px !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+/* Actual image */
+
+.mobile-image-visual img {
+    width: 100%;
+    max-width: 520px;
+
+    height: 360px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 25px;
+
+    box-shadow: 0 25px 60px rgba(0,0,0,0.30);
+
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+
+/* Integration content */
+
+.mobile-integration-item {
+    margin-bottom: 15px;
+}
+
+.mobile-integration-item h3 {
+    margin-bottom: 5px;
+
+    font-size: 16px;
+}
+
+.mobile-integration-item p {
+    margin-bottom: 0 !important;
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .mobile-section-row,
+    .reverse-mobile-section-row {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .mobile-section-row .content-visual,
+    .reverse-mobile-section-row .content-visual,
+    .mobile-app-visual,
+    .mobile-features-visual,
+    .mobile-image-visual {
+        min-height: 300px !important;
+    }
+
+
+    .phone-mockup {
+        width: 220px;
+        height: 440px;
+    }
+
+
+    .mobile-features-card {
+        max-width: 100%;
+    }
+
+
+    .mobile-image-visual img {
+        height: 300px;
+    }
+
+}
+/* =========================================================
+   MOBILE APP - COMPACT VERSION
+========================================================= */
+
+/* Section overall height reduce */
+.service-section {
+    padding: 55px 0 !important;
+}
+
+/* Heading ke neeche space reduce */
+.service-section .section-heading {
+    margin-bottom: 30px !important;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.mobile-section-row,
+.reverse-mobile-section-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+
+/* Content compact */
+.mobile-section-row .content-box,
+.reverse-mobile-section-row .content-box {
+    padding: 0 !important;
+}
+
+
+/* Paragraph spacing */
+.mobile-section-row .content-box p,
+.reverse-mobile-section-row .content-box p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   VISUAL AREA - REDUCED
+========================================================= */
+
+.mobile-section-row .content-visual,
+.reverse-mobile-section-row .content-visual {
+    width: 100%;
+    min-height: 300px !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =========================================================
+   1. PHONE VISUAL
+========================================================= */
+
+.mobile-app-visual {
+    min-height: 300px !important;
+}
+
+.phone-mockup {
+    width: 205px;
+    height: 410px;
+
+    padding: 7px;
+
+    border-radius: 30px;
+}
+
+
+/* Phone screen */
+.phone-screen {
+    border-radius: 24px;
+    padding: 30px 15px 12px;
+}
+
+
+/* =========================================================
+   2. FEATURES VISUAL
+========================================================= */
+
+.mobile-features-visual {
+    min-height: 300px !important;
+}
+
+.mobile-features-card {
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+
+/* Feature rows smaller */
+.feature-item {
+    padding: 10px 0;
+    gap: 11px;
+}
+
+.feature-icon {
+    width: 34px;
+    height: 34px;
+
+    border-radius: 9px;
+    font-size: 13px;
+}
+
+.feature-item strong {
+    font-size: 12px;
+}
+
+.feature-item span {
+    font-size: 9px;
+}
+
+.features-title {
+    font-size: 13px;
+    padding-bottom: 14px;
+}
+
+
+/* =========================================================
+   3. IMAGE VISUAL
+========================================================= */
+
+.mobile-image-visual {
+    min-height: 300px !important;
+}
+
+.mobile-image-visual img {
+    width: 100%;
+    max-width: 430px;
+
+    height: 300px;
+
+    border-radius: 20px;
+}
+
+
+/* =========================================================
+   INTEGRATION CONTENT
+========================================================= */
+
+.mobile-integration-item {
+    margin-bottom: 10px;
+}
+
+.mobile-integration-item h3 {
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.mobile-integration-item p {
+    margin-bottom: 8px !important;
+}
+
+
+/* =========================================================
+   MOBILE SCREEN
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .service-section {
+        padding: 45px 0 !important;
+    }
+
+    .service-section .section-heading {
+        margin-bottom: 25px !important;
+    }
+
+    .mobile-section-row,
+    .reverse-mobile-section-row {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .mobile-section-row .content-visual,
+    .reverse-mobile-section-row .content-visual {
+        min-height: 260px !important;
+    }
+
+    .phone-mockup {
+        width: 180px;
+        height: 360px;
+    }
+
+    .mobile-features-card {
+        max-width: 100%;
+    }
+
+    .mobile-image-visual img {
+        height: 260px;
+    }
+}
+/* =========================================================
+   ERP SOLUTIONS - IMAGE LEFT / CONTENT RIGHT
+========================================================= */
+
+.reverse-erp-section-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+
+/* LEFT IMAGE AREA */
+
+.erp-image-visual {
+    width: 100%;
+    min-height: 300px !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ERP IMAGE */
+
+.erp-image-visual img {
+    width: 100%;
+    max-width: 430px;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow: 0 25px 60px rgba(0,0,0,0.30);
+}
+
+
+/* RIGHT CONTENT */
+
+.reverse-erp-section-row .content-box {
+    width: 100%;
+    padding: 0 !important;
+}
+
+.reverse-erp-section-row .content-box p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    .reverse-erp-section-row {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .erp-image-visual {
+        min-height: 260px !important;
+    }
+
+    .erp-image-visual img {
+        max-width: 100%;
+        height: 260px;
+    }
+
+}
+
+/* =========================================================
+   ECOMMERCE DEVELOPMENT
+========================================================= */
+
+
+/* ---------------------------------------------------------
+   COMMON LAYOUT
+--------------------------------------------------------- */
+
+.ecommerce-section-row,
+.ecommerce-visual-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+
+/* Content */
+
+.ecommerce-section-row .content-box,
+.ecommerce-visual-row .content-box {
+    width: 100%;
+    padding: 0 !important;
+}
+
+
+/* Paragraphs */
+
+.ecommerce-section-row .content-box p,
+.ecommerce-visual-row .content-box p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+/* ---------------------------------------------------------
+   1. ECOMMERCE IMAGE
+--------------------------------------------------------- */
+
+.ecommerce-image-visual {
+    width: 100%;
+    min-height: 300px !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ecommerce-image-visual img {
+    width: 100%;
+    max-width: 430px;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow: 0 25px 60px rgba(0,0,0,0.30);
+}
+
+
+/* =========================================================
+   2. ECOMMERCE DASHBOARD VISUAL
+========================================================= */
+
+.ecommerce-dashboard-visual {
+    width: 100%;
+    min-height: 300px !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.ecommerce-dashboard {
+    width: 100%;
+    max-width: 430px;
+
+    padding: 22px;
+
+    border-radius: 20px;
+
+    background: #0b1220;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+
+    box-sizing: border-box;
+}
+
+
+/* Top */
+
+.ecommerce-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-bottom: 16px;
+
+    margin-bottom: 15px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+
+    color: #e5e7eb;
+}
+
+
+.store-title {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.cart-icon {
+    font-size: 13px;
+}
+
+
+/* Product Grid */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+}
+
+
+.product-card {
+    padding: 12px;
+
+    border-radius: 13px;
+
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(255,255,255,0.06);
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.product-image {
+    height: 75px;
+
+    border-radius: 10px;
+
+    margin-bottom: 4px;
+
+    background: rgba(59,130,246,0.08);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+}
+
+
+.product-card span {
+    color: #94a3b8;
+    font-size: 10px;
+}
+
+
+.product-card strong {
+    color: #e5e7eb;
+    font-size: 12px;
+}
+
+
+/* Order Status */
+
+.order-status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px;
+
+    border-radius: 13px;
+
+    background: rgba(255,255,255,0.04);
+
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+
+.order-status div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.order-status small {
+    color: #94a3b8;
+    font-size: 9px;
+}
+
+
+.order-status strong {
+    color: #e5e7eb;
+    font-size: 11px;
+}
+
+
+.order-status > i {
+    font-size: 18px;
+}
+
+
+/* Progress */
+
+.ecommerce-progress {
+    width: 100%;
+    height: 5px;
+
+    margin-top: 15px;
+
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.08);
+
+    overflow: hidden;
+}
+
+
+.ecommerce-progress span {
+    display: block;
+
+    width: 82%;
+    height: 100%;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .ecommerce-section-row,
+    .ecommerce-visual-row {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+
+    .ecommerce-image-visual,
+    .ecommerce-dashboard-visual {
+        min-height: 260px !important;
+    }
+
+
+    .ecommerce-image-visual img {
+        max-width: 100%;
+        height: 260px;
+    }
+
+
+    .ecommerce-dashboard {
+        max-width: 100%;
+    }
+
+}
+/* =========================================================
+   CLOUD & IT
+   IMAGE LEFT + CONTENT RIGHT
+========================================================= */
+
+.cloud-section-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+
+/* LEFT IMAGE */
+
+.cloud-image-visual {
+    width: 100%;
+    min-height: 300px !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* IMAGE */
+
+.cloud-image-visual img {
+    width: 100%;
+    max-width: 430px;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow: 0 25px 60px rgba(0,0,0,0.30);
+}
+
+
+/* RIGHT CONTENT */
+
+.cloud-section-row .content-box {
+    width: 100%;
+    padding: 0 !important;
+}
+
+.cloud-section-row .content-box p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .cloud-section-row {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .cloud-image-visual {
+        min-height: 260px !important;
+    }
+
+    .cloud-image-visual img {
+        max-width: 100%;
+        height: 260px;
+    }
+
+}
+/* =========================================================
+   DIGITAL MARKETING
+   IMAGE LEFT + CONTENT RIGHT
+========================================================= */
+
+.digital-marketing-section-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+
+/* LEFT IMAGE AREA */
+
+.digital-marketing-image-visual {
+    width: 100%;
+    min-height: 300px !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* DIGITAL MARKETING IMAGE */
+
+.digital-marketing-image-visual img {
+    width: 100%;
+    max-width: 430px;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow: 0 25px 60px rgba(0,0,0,0.30);
+}
+
+
+/* RIGHT CONTENT */
+
+.digital-marketing-section-row .content-box {
+    width: 100%;
+    padding: 0 !important;
+}
+
+.digital-marketing-section-row .content-box p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .digital-marketing-section-row {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .digital-marketing-image-visual {
+        min-height: 260px !important;
+    }
+
+    .digital-marketing-image-visual img {
+        max-width: 100%;
+        height: 260px;
+    }
+
+}

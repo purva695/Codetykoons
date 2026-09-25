@@ -1,738 +1,742 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Web Development with AI Automation | CodeTykoons</title>
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/service-detail.css">
-</head>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/service-detail.css" />
+  </head>
 
-<body>
-
-<header class="header">
-    <nav class="navbar container">
-
+  <body>
+    <header class="header">
+      <nav class="navbar container">
         <a href="../index.html" class="logo">
-            <img src="../images/logo.jpeg" alt="CodeTykoons Logo">
-            <span>Code<span>Tykoons</span></span>
+          <img src="../images/logo.jpeg" alt="CodeTykoons Logo" />
+          <span>Code<span>Tykoons</span></span>
         </a>
 
         <button class="menu-toggle" id="menuToggle">
-            <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-bars"></i>
         </button>
 
         <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="../index.html" class="active">Home</a>
+          </li>
 
-            <li>
-                <a href="../index.html" class="active">Home</a>
-            </li>
+          <li>
+            <a href="../about.html">About</a>
+          </li>
 
-            <li>
-                <a href="../about.html">About</a>
-            </li>
+          <li class="dropdown">
+            <a href="../services.html">
+              Services
+              <i class="fa-solid fa-chevron-down"></i>
+            </a>
 
-            <li class="dropdown">
-                <a href="../services.html">
-                    Services
-                    <i class="fa-solid fa-chevron-down"></i>
-                </a>
+            <div class="dropdown-menu">
+              <a href="../services/ai-development.html"> AI Development </a>
 
-                <div class="dropdown-menu">
+              <a href="../services/custom-software.html"> Custom Software </a>
 
-                    <a href="../services/ai-development.html">
-                        AI Development
-                    </a>
+              <a href="../services/web-development.html"> Web Development </a>
 
-                    <a href="../services/custom-software.html">
-                        Custom Software
-                    </a>
+              <a href="../services/mobile-app-development.html">
+                Mobile App Development
+              </a>
 
-                    <a href="../services/web-development.html">
-                        Web Development
-                    </a>
+              <a href="../services/erp-business-software.html">
+                ERP & Business Software
+              </a>
 
-                    <a href="../services/mobile-app-development.html">
-                        Mobile App Development
-                    </a>
+              <a href="../services/ecommerce-development.html">
+                Ecommerce Development
+              </a>
 
-                    <a href="../services/erp-business-software.html">
-                        ERP & Business Software
-                    </a>
+              <a href="../services/cloud-it.html"> Cloud & IT Solutions </a>
 
-                    <a href="../services/ecommerce-development.html">
-                        Ecommerce Development
-                    </a>
+              <a href="../services/digital-marketing.html">
+                Digital Marketing
+              </a>
+            </div>
+          </li>
 
-                    <a href="../services/cloud-it.html">
-                        Cloud & IT Solutions
-                    </a>
+          <li>
+            <a href="../portfolio.html">Portfolio</a>
+          </li>
 
-                    <a href="../services/digital-marketing.html">
-                        Digital Marketing
-                    </a>
+          <li>
+            <a href="../blog.html">Blog</a>
+          </li>
 
-                </div>
-            </li>
+          <li>
+            <a href="../contact.html">Contact</a>
+          </li>
 
-            <li>
-                <a href="../portfolio.html">Portfolio</a>
-            </li>
-
-            <li>
-                <a href="../blog.html">Blog</a>
-            </li>
-
-            <li>
-                <a href="../contact.html">Contact</a>
-            </li>
-
-            <li class="nav-cta">
-                <a href="../contact.html">Let's Talk <i class="fa-solid fa-arrow-right"></i></a>
-            </li>
-
+          <li class="nav-cta">
+            <a href="../contact.html"
+              >Let's Talk <i class="fa-solid fa-arrow-right"></i
+            ></a>
+          </li>
         </ul>
+      </nav>
+    </header>
 
-    </nav>
-</header>
+    <!-- HERO -->
 
+    <section class="service-hero">
+      <div class="service-hero-glow"></div>
 
-<!-- HERO -->
-
-<section class="service-hero">
-
-    <div class="service-hero-glow"></div>
-
-    <div class="container">
-
+      <div class="container">
         <div class="breadcrumb">
-            <a href="../index.html">Home</a>
-            <i class="fa-solid fa-chevron-right"></i>
-            <a href="../services.html">Services</a>
-            <i class="fa-solid fa-chevron-right"></i>
-            <span>Web Development</span>
+          <a href="../index.html">Home</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <a href="../services.html">Services</a>
+          <i class="fa-solid fa-chevron-right"></i>
+          <span>Web Development</span>
         </div>
 
         <div class="service-hero-content">
+          <!-- Left Content -->
+          <div class="service-hero-text">
+            <div class="service-hero-icon">
+              <i class="fa-solid fa-globe"></i>
+            </div>
 
-    <!-- Left Content -->
-    <div class="service-hero-text">
+            <span class="small-heading">WEB DEVELOPMENT</span>
 
-        <div class="service-hero-icon">
-            <i class="fa-solid fa-globe"></i>
+            <h1>Web <span>Development</span></h1>
+
+            <p>
+              We create modern, responsive and high-performance websites that
+              deliver engaging user experiences and help businesses build a
+              strong digital presence.
+            </p>
+
+            <a href="../contact.html" class="btn btn-primary">
+              Discuss Your Website Project
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Right Image -->
+          <div class="service-hero-image">
+            <img
+              src="../images/web-development.jpg"
+              alt="Web Development Services"
+            />
+          </div>
         </div>
+      </div>
+    </section>
 
-        <span class="small-heading">WEB DEVELOPMENT</span>
+    <!-- INTRO -->
 
-        <h1>
-            Web <span>Development</span>
-        </h1>
-
-        <p>
-            We create modern, responsive and high-performance websites
-            that deliver engaging user experiences and help businesses
-            build a strong digital presence.
-        </p>
-
-        <a href="../contact.html" class="btn btn-primary">
-            Discuss Your Website Project
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
-
-    </div>
-
-
-    <!-- Right Image -->
-    <div class="service-hero-image">
-
-        <img
-            src="../images/web-development.jpg"
-            alt="Web Development Services"
-        >
-
-    </div>
-
-</div>
-
-    </div>
-
-</section>
-
-
-<!-- INTRO -->
-
-<section class="service-section">
-
-    <div class="container">
-
+    <section class="service-section">
+      <div class="container">
         <div class="section-heading">
+          <span class="section-tag"> WEB DEVELOPMENT </span>
 
-            <span class="section-tag">
-                WEB DEVELOPMENT
-            </span>
-
-            <h2>
-                Build Smarter Websites &
-                <span>AI-Powered Web Applications</span>
-            </h2>
-
+          <h2>
+            Build Smarter Websites &
+            <span>AI-Powered Web Applications</span>
+          </h2>
         </div>
 
-        <div class="content-box">
-
+        <div class="content-grid web-section-row">
+          <div class="content-box">
             <p>
-                CodeTykoons is a web development business that helps
-                businesses, startups, and organizations to create innovative
-                and scalable technology solutions that are secure and
-                AI-based.
+              CodeTykoons is a web development business that helps businesses,
+              startups, and organizations to create innovative and scalable
+              technology solutions that are secure and AI-based.
             </p>
 
             <p>
-                We integrate web development, AI automation, APIs, and other
-                up-to-date technologies in creating digital platforms capable
-                of much more than providing information.
+              We integrate web development, AI automation, APIs, and other
+              up-to-date technologies in creating digital platforms capable of
+              much more than providing information.
             </p>
 
             <p>
-                We design and develop web solutions for corporate projects
-                and online stores to custom applications, SaaS solutions,
-                client portals, and AI-enhanced business systems.
+              We design and develop web solutions for corporate projects and
+              online stores to custom applications, SaaS solutions, client
+              portals, and AI-enhanced business systems.
             </p>
 
             <p>
-                The adoption of AI technology allows making your website
-                smarter. It can give answers to customer questions, analyze
-                user behavior, recommend products, automate data and
-                join various business systems.
+              The adoption of AI technology allows making your website smarter.
+              It can give answers to customer questions, analyze user behavior,
+              recommend products, automate data and join various business
+              systems.
             </p>
 
             <p>
-                Create a website. Make it intelligent. Automate your business.
+              Create a website. Make it intelligent. Automate your business.
             </p>
+          </div>
 
+          <div class="content-visual web-code-visual">
+            <div class="web-code-card">
+              <div class="window-top">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+
+              <div class="web-code-body">
+                <span class="code-purple">&lt;website&gt;</span>
+                <br />
+
+                <span class="indent">
+                  <span class="code-purple">&lt;h1&gt;</span>
+                  <span class="code-white">Smart Website</span>
+                  <span class="code-purple">&lt;/h1&gt;</span>
+                </span>
+
+                <br />
+
+                <span class="indent">
+                  <span class="code-purple">&lt;ai&gt;</span>
+                  <span class="code-green">Automation Enabled</span>
+                  <span class="code-purple">&lt;/ai&gt;</span>
+                </span>
+
+                <br />
+
+                <span class="indent">
+                  <span class="code-purple">&lt;api&gt;</span>
+                  <span class="code-blue">Connected</span>
+                  <span class="code-purple">&lt;/api&gt;</span>
+                </span>
+
+                <br />
+
+                <span class="code-purple">&lt;/website&gt;</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- AI POWERED WEBSITE -->
 
-</section>
-
-
-<!-- AI POWERED WEBSITE -->
-
-<section class="service-section light-section">
-
-    <div class="container">
-
+    <section class="service-section light-section">
+      <div class="container">
         <div class="section-heading">
+          <span class="section-tag"> AI-POWERED WEB DEVELOPMENT </span>
 
-            <span class="section-tag">
-                AI-POWERED WEB DEVELOPMENT
-            </span>
+          <h2>
+            Add Intelligence to
+            <span>Your Website</span>
+          </h2>
 
-            <h2>
-                Add Intelligence to
-                <span>Your Website</span>
-            </h2>
-
-            <p>
-                AI can transform a standard website into an interactive
-                business tool.
-            </p>
-
+          <p>
+            AI can transform a standard website into an interactive business
+            tool.
+          </p>
         </div>
-
 
         <div class="service-detail-grid">
-
-            <div class="detail-card">
-                <div class="detail-icon">
-                    <i class="fa-solid fa-comments"></i>
-                </div>
-
-                <h3>AI Chatbots</h3>
-
-                <p>
-                    Answer customer questions and provide instant assistance.
-                </p>
+          <div class="detail-card">
+            <div class="detail-icon">
+              <i class="fa-solid fa-comments"></i>
             </div>
 
+            <h3>AI Chatbots</h3>
 
-            <div class="detail-card">
-                <div class="detail-icon">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
+            <p>Answer customer questions and provide instant assistance.</p>
+          </div>
 
-                <h3>AI Lead Qualification</h3>
-
-                <p>
-                    Understand visitor requirements and identify potential
-                    leads based on defined criteria.
-                </p>
+          <div class="detail-card">
+            <div class="detail-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
             </div>
 
+            <h3>AI Lead Qualification</h3>
 
-            <div class="detail-card">
-                <div class="detail-icon">
-                    <i class="fa-solid fa-user-check"></i>
-                </div>
+            <p>
+              Understand visitor requirements and identify potential leads based
+              on defined criteria.
+            </p>
+          </div>
 
-                <h3>AI Sales Assistants</h3>
-
-                <p>
-                    Help customers find products, services, pricing,
-                    information or relevant solutions.
-                </p>
+          <div class="detail-card">
+            <div class="detail-icon">
+              <i class="fa-solid fa-user-check"></i>
             </div>
 
+            <h3>AI Sales Assistants</h3>
 
-            <div class="detail-card">
-                <div class="detail-icon">
-                    <i class="fa-solid fa-wand-magic-sparkles"></i>
-                </div>
+            <p>
+              Help customers find products, services, pricing, information or
+              relevant solutions.
+            </p>
+          </div>
 
-                <h3>AI Recommendations</h3>
-
-                <p>
-                    Provide personalized product or service suggestions.
-                </p>
+          <div class="detail-card">
+            <div class="detail-icon">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
             </div>
 
+            <h3>AI Recommendations</h3>
 
-            <div class="detail-card">
-                <div class="detail-icon">
-                    <i class="fa-solid fa-book-open"></i>
-                </div>
+            <p>Provide personalized product or service suggestions.</p>
+          </div>
 
-                <h3>AI Knowledge Assistants</h3>
-
-                <p>
-                    Allow users to ask questions about your company's
-                    products, services, policies, or documentation.
-                </p>
+          <div class="detail-card">
+            <div class="detail-icon">
+              <i class="fa-solid fa-book-open"></i>
             </div>
 
+            <h3>AI Knowledge Assistants</h3>
 
-            <div class="detail-card">
-                <div class="detail-icon">
-                    <i class="fa-solid fa-pen-nib"></i>
-                </div>
+            <p>
+              Allow users to ask questions about your company's products,
+              services, policies, or documentation.
+            </p>
+          </div>
 
-                <h3>AI Content Assistance</h3>
-
-                <p>
-                    Support content generation, summarization, classification
-                    and other defined content workflows.
-                </p>
+          <div class="detail-card">
+            <div class="detail-icon">
+              <i class="fa-solid fa-pen-nib"></i>
             </div>
 
+            <h3>AI Content Assistance</h3>
+
+            <p>
+              Support content generation, summarization, classification and
+              other defined content workflows.
+            </p>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- AI CHATBOT -->
 
-</section>
-
-
-<!-- AI CHATBOT -->
-
-<section class="service-section">
-
-    <div class="container">
-
+    <section class="service-section">
+      <div class="container">
         <div class="section-heading left-heading">
+          <span class="section-tag"> AI CHATBOT DEVELOPMENT </span>
 
-            <span class="section-tag">
-                AI CHATBOT DEVELOPMENT
-            </span>
-
-            <h2>
-                AI Chatbot Development
-                <span>for Websites</span>
-            </h2>
-
+          <h2>
+            AI Chatbot Development
+            <span>for Websites</span>
+          </h2>
         </div>
 
+        <div class="content-grid reverse-section-row">
+          <div class="content-visual chatbot-visual">
+            <div class="chatbot-card">
+              <div class="chatbot-header">
+                <i class="fa-solid fa-robot"></i>
+                <span>AI Assistant</span>
+                <span class="chat-status"></span>
+              </div>
 
-        <div class="content-box">
+              <div class="chatbot-body">
+                <div class="chat-message bot">Hello! How can I help you?</div>
 
+                <div class="chat-message user">
+                  I need information about your services.
+                </div>
+
+                <div class="chat-message bot">
+                  Sure! I can help you with that.
+                </div>
+
+                <div class="chat-input">
+                  <span>Ask AI Assistant...</span>
+                  <i class="fa-solid fa-paper-plane"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-box">
             <h3>Give Your Website an Intelligent Assistant</h3>
 
             <p>
-                A website chatbot can help visitors find information and
-                interact with your business without requiring a human response.
+              A website chatbot can help visitors find information and interact
+              with your business without requiring a human response.
             </p>
 
-            <p>
-                CodeTykoons can develop customized AI chatbots for:
-            </p>
+            <p>CodeTykoons can develop customized AI chatbots for:</p>
 
             <ul>
-                <li>Customer support</li>
-                <li>Product information</li>
-                <li>Service enquiries</li>
-                <li>Lead generation</li>
-                <li>Sales assistance</li>
-                <li>Appointment booking</li>
-                <li>FAQs</li>
-                <li>Knowledge-base search</li>
-                <li>Internal business assistance</li>
+              <li>Customer support</li>
+              <li>Product information</li>
+              <li>Service enquiries</li>
+              <li>Lead generation</li>
+              <li>Sales assistance</li>
+              <li>Appointment booking</li>
+              <li>FAQs</li>
+              <li>Knowledge-base search</li>
+              <li>Internal business assistance</li>
             </ul>
 
             <p>
-                The chatbot can be connected with your website content,
-                knowledge base, CRM, APIs, or other approved business systems.
+              The chatbot can be connected with your website content, knowledge
+              base, CRM, APIs, or other approved business systems.
             </p>
-
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- LEAD GENERATION -->
 
-</section>
-
-
-<!-- LEAD GENERATION -->
-
-<section class="service-section light-section">
-
-    <div class="container">
-
+    <section class="service-section light-section">
+      <div class="container">
         <div class="section-heading">
+          <span class="section-tag"> AUTOMATION </span>
 
-            <span class="section-tag">
-                AUTOMATION
-            </span>
-
-            <h2>
-                AI Lead Generation &
-                <span>Automation</span>
-            </h2>
-
+          <h2>
+            AI Lead Generation &
+            <span>Automation</span>
+          </h2>
         </div>
 
-
-        <div class="content-box">
-
+        <div class="content-grid web-section-row">
+          <div class="content-box">
             <h3>Convert Website Traffic Into Business Opportunities</h3>
 
-            <p>
-                Getting website visitors is only one part of digital growth.
-            </p>
+            <p>Getting website visitors is only one part of digital growth.</p>
 
             <p>
-                AI and automation can help businesses manage enquiries after
-                visitors interact with the website.
+              AI and automation can help businesses manage enquiries after
+              visitors interact with the website.
             </p>
 
             <ul>
-                <li>Capture visitor information</li>
-                <li>Understand enquiry details</li>
-                <li>Categorize leads</li>
-                <li>Assign leads to teams</li>
-                <li>Send automated notifications</li>
-                <li>Score information in CRM</li>
-                <li>Trigger follow-up workflows</li>
-                <li>Provide initial customer assistance</li>
+              <li>Capture visitor information</li>
+              <li>Understand enquiry details</li>
+              <li>Categorize leads</li>
+              <li>Assign leads to teams</li>
+              <li>Send automated notifications</li>
+              <li>Score information in CRM</li>
+              <li>Trigger follow-up workflows</li>
+              <li>Provide initial customer assistance</li>
             </ul>
 
             <p>
-                This creates a more connected workflow between the website,
-                CRM and automation systems.
+              This creates a more connected workflow between the website, CRM
+              and automation systems.
             </p>
+          </div>
 
+          <div class="content-visual automation-visual">
+            <div class="automation-card">
+              <div class="automation-title">
+                <i class="fa-solid fa-gears"></i>
+                <span>Automation Workflow</span>
+              </div>
+
+              <div class="workflow">
+                <div class="workflow-step">
+                  <i class="fa-solid fa-user"></i>
+                  <span>Visitor</span>
+                </div>
+
+                <div class="workflow-arrow">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <div class="workflow-step">
+                  <i class="fa-solid fa-robot"></i>
+                  <span>AI</span>
+                </div>
+
+                <div class="workflow-arrow">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </div>
+
+                <div class="workflow-step">
+                  <i class="fa-solid fa-database"></i>
+                  <span>CRM</span>
+                </div>
+              </div>
+
+              <div class="automation-status">
+                <span class="status-dot"></span>
+                Workflow Active
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- AI AUTOMATION -->
 
-</section>
-
-
-<!-- AI AUTOMATION -->
-
-<section class="service-section">
-
-    <div class="container">
-
+    <section class="service-section">
+      <div class="container">
         <div class="section-heading">
+          <span class="section-tag"> AI AUTOMATION FOR WEBSITES </span>
 
-            <span class="section-tag">
-                AI AUTOMATION FOR WEBSITES
-            </span>
-
-            <h2>
-                Turn Website Visitors Into
-                <span>Automated Workflows</span>
-            </h2>
-
+          <h2>
+            Turn Website Visitors Into
+            <span>Automated Workflows</span>
+          </h2>
         </div>
-
 
         <div class="process-timeline">
+          <div class="process-item">
+            <div class="process-number">01</div>
 
-            <div class="process-item">
-                <div class="process-number">01</div>
-
-                <div class="process-content">
-                    <h3>Visitor arrives</h3>
-                    <p>
-                        Your website receives a visitor or enquiry.
-                    </p>
-                </div>
+            <div class="process-content">
+              <h3>Visitor arrives</h3>
+              <p>Your website receives a visitor or enquiry.</p>
             </div>
+          </div>
 
+          <div class="process-item">
+            <div class="process-number">02</div>
 
-            <div class="process-item">
-                <div class="process-number">02</div>
-
-                <div class="process-content">
-                    <h3>AI understands the requirement</h3>
-                    <p>
-                        AI processes the visitor's enquiry and identifies
-                        relevant information.
-                    </p>
-                </div>
+            <div class="process-content">
+              <h3>AI understands the requirement</h3>
+              <p>
+                AI processes the visitor's enquiry and identifies relevant
+                information.
+              </p>
             </div>
+          </div>
 
+          <div class="process-item">
+            <div class="process-number">03</div>
 
-            <div class="process-item">
-                <div class="process-number">03</div>
-
-                <div class="process-content">
-                    <h3>Lead is categorized</h3>
-                    <p>
-                        The enquiry can be categorized according to defined
-                        business rules.
-                    </p>
-                </div>
+            <div class="process-content">
+              <h3>Lead is categorized</h3>
+              <p>
+                The enquiry can be categorized according to defined business
+                rules.
+              </p>
             </div>
+          </div>
 
+          <div class="process-item">
+            <div class="process-number">04</div>
 
-            <div class="process-item">
-                <div class="process-number">04</div>
-
-                <div class="process-content">
-                    <h3>Lead is sent to CRM</h3>
-                    <p>
-                        Relevant information can be passed to the connected
-                        CRM system.
-                    </p>
-                </div>
+            <div class="process-content">
+              <h3>Lead is sent to CRM</h3>
+              <p>
+                Relevant information can be passed to the connected CRM system.
+              </p>
             </div>
+          </div>
 
+          <div class="process-item">
+            <div class="process-number">05</div>
 
-            <div class="process-item">
-                <div class="process-number">05</div>
-
-                <div class="process-content">
-                    <h3>Sales team receives notification</h3>
-                    <p>
-                        The responsible team can receive the required
-                        information for follow-up.
-                    </p>
-                </div>
+            <div class="process-content">
+              <h3>Sales team receives notification</h3>
+              <p>
+                The responsible team can receive the required information for
+                follow-up.
+              </p>
             </div>
+          </div>
 
+          <div class="process-item">
+            <div class="process-number">06</div>
 
-            <div class="process-item">
-                <div class="process-number">06</div>
-
-                <div class="process-content">
-                    <h3>Automated follow-up is triggered</h3>
-                    <p>
-                        Defined automation workflows can continue the process.
-                    </p>
-                </div>
+            <div class="process-content">
+              <h3>Automated follow-up is triggered</h3>
+              <p>Defined automation workflows can continue the process.</p>
             </div>
-
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- API -->
 
-</section>
-
-
-<!-- API -->
-
-<section class="service-section light-section">
-
-    <div class="container">
-
+    <section class="service-section light-section">
+      <div class="container">
         <div class="section-heading">
+          <span class="section-tag"> API & THIRD-PARTY INTEGRATION </span>
 
-            <span class="section-tag">
-                API & THIRD-PARTY INTEGRATION
-            </span>
-
-            <h2>
-                Connect Your Website With
-                <span>Your Business Tools</span>
-            </h2>
-
+          <h2>
+            Connect Your Website With
+            <span>Your Business Tools</span>
+          </h2>
         </div>
 
+        <div class="content-grid reverse-section-row">
+          <div class="content-visual api-visual">
+            <div class="api-card">
+              <div class="api-top">
+                <span class="api-method"> GET </span>
 
-        <div class="content-box">
+                <span class="api-url"> /api/business </span>
+              </div>
 
+              <div class="api-line">
+                <span class="api-key">CRM:</span>
+                <span class="api-success">Connected</span>
+              </div>
+
+              <div class="api-line">
+                <span class="api-key">Payment:</span>
+                <span class="api-success">Connected</span>
+              </div>
+
+              <div class="api-line">
+                <span class="api-key">AI API:</span>
+                <span class="api-success">Connected</span>
+              </div>
+
+              <div class="api-line">
+                <span class="api-key">Google:</span>
+                <span class="api-success">Connected</span>
+              </div>
+
+              <div class="api-progress">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-box">
             <p>
-                Modern websites often need to communicate with other systems.
-                CodeTykoons can integrate websites with business applications
-                and services such as:
+              Modern websites often need to communicate with other systems.
+              CodeTykoons can integrate websites with business applications and
+              services such as:
             </p>
 
             <ul>
-                <li>CRM systems</li>
-                <li>ERP systems</li>
-                <li>Payment gateways</li>
-                <li>Email platforms</li>
-                <li>Marketing systems</li>
-                <li>Google services</li>
-                <li>Social media platforms</li>
-                <li>Shipping systems</li>
-                <li>Booking systems</li>
-                <li>Business APIs</li>
-                <li>AI APIs</li>
+              <li>CRM systems</li>
+              <li>ERP systems</li>
+              <li>Payment gateways</li>
+              <li>Email platforms</li>
+              <li>Marketing systems</li>
+              <li>Google services</li>
+              <li>Social media platforms</li>
+              <li>Shipping systems</li>
+              <li>Booking systems</li>
+              <li>Business APIs</li>
+              <li>AI APIs</li>
             </ul>
 
             <p>
-                These integrations can help create a connected digital
-                ecosystem instead of isolated software.
+              These integrations can help create a connected digital ecosystem
+              instead of isolated software.
             </p>
-
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- CTA -->
 
-</section>
-
-
-<!-- CTA -->
-
-<section class="service-cta">
-
-    <div class="container">
-
+    <section class="service-cta">
+      <div class="container">
         <div class="cta-box">
+          <div>
+            <span class="section-tag">BUILD A SMARTER WEBSITE</span>
 
-            <div>
-                <span class="section-tag">BUILD A SMARTER WEBSITE</span>
+            <h2>
+              Make Your Website
+              <br />
+              Work Smarter.
+            </h2>
 
-                <h2>
-                    Make Your Website
-                    <br>
-                    Work Smarter.
-                </h2>
+            <p>Combine modern web development with AI and automation.</p>
+          </div>
 
-                <p>
-                    Combine modern web development with AI and automation.
-                </p>
-            </div>
-
-            <a href="../contact.html" class="white-btn">
-                Get Started
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
+          <a href="../contact.html" class="white-btn">
+            Get Started
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
         </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- FOOTER -->
 
-</section>
-
-
-<!-- FOOTER -->
-
-<footer class="footer">
-
-    <div class="container footer-grid">
-
+    <footer class="footer">
+      <div class="container footer-grid">
         <div class="footer-about">
+          <a href="../index.html" class="logo footer-logo">
+            <img src="../images/logo.jpeg" alt="CodeTykoons Logo" />
+            <span>Code<span>Tykoons</span></span>
+          </a>
 
-            <a href="../index.html" class="logo footer-logo">
-                <img src="../images/logo.jpeg" alt="CodeTykoons Logo">
-                <span>Code<span>Tykoons</span></span>
-            </a>
+          <p>
+            Innovative technology solutions for businesses, enterprises and
+            startups.
+          </p>
 
-            <p>
-                Innovative technology solutions for businesses,
-                enterprises and startups.
-            </p>
-
-            <div class="social-links">
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-            </div>
-
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
         </div>
 
         <div class="footer-column">
-            <h4>Company</h4>
-            <a href="../about.html">About Us</a>
-            <a href="../services.html">Services</a>
-            <a href="../blog.html">Blog</a>
-            <a href="../contact.html">Contact</a>
+          <h4>Company</h4>
+          <a href="../about.html">About Us</a>
+          <a href="../services.html">Services</a>
+          <a href="../blog.html">Blog</a>
+          <a href="../contact.html">Contact</a>
         </div>
 
         <div class="footer-column">
+          <h4>Services</h4>
 
-            <h4>Services</h4>
+          <a href="../services/ai-development.html"> AI Development </a>
 
-            <a href="../services/ai-development.html">
-                AI Development
-            </a>
+          <a href="../services/custom-software.html"> Custom Software </a>
 
-            <a href="../services/custom-software.html">
-                Custom Software
-            </a>
+          <a href="../services/web-development.html"> Web Development </a>
 
-            <a href="../services/web-development.html">
-                Web Development
-            </a>
+          <a href="../services/mobile-app-development.html">
+            Mobile App Development
+          </a>
 
-            <a href="../services/mobile-app-development.html">
-                Mobile App Development
-            </a>
-
-            <a href="../services/ecommerce-development.html">
-                Ecommerce Development
-            </a>
-
+          <a href="../services/ecommerce-development.html">
+            Ecommerce Development
+          </a>
         </div>
 
         <div class="footer-column footer-contact">
-            <h4>Contact Us</h4>
+          <h4>Contact Us</h4>
 
-            <a href="mailto:CodeTykoons@gmail.com">
-                <i class="fa-regular fa-envelope"></i>
-                CodeTykoons@gmail.com
-            </a>
+          <a href="mailto:CodeTykoons@gmail.com">
+            <i class="fa-regular fa-envelope"></i>
+            CodeTykoons@gmail.com
+          </a>
 
-            <a href="tel:+916375777464">
-                <i class="fa-solid fa-phone"></i>
-                +91 63757 77464
-            </a>
+          <a href="tel:+916375777464">
+            <i class="fa-solid fa-phone"></i>
+            +91 63757 77464
+          </a>
 
-            <p>
-                <i class="fa-solid fa-location-dot"></i>
-                Jagatpura , Jaipur
-            </p>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Jagatpura , Jaipur
+          </p>
         </div>
+      </div>
 
-    </div>
-
-    <div class="footer-bottom">
+      <div class="footer-bottom">
         <div class="container">
-            <p>© 2026 CodeTykoons. All Rights Reserved.</p>
+          <p>© 2026 CodeTykoons. All Rights Reserved.</p>
         </div>
-    </div>
+      </div>
+    </footer>
 
-</footer>
-
-<script src="../js/script.js"></script>
-
-</body>
+    <script src="../js/script.js"></script>
+  </body>
 </html>
