@@ -1,4 +1,4 @@
-const API_BASE = "http://localhost:5000/api";
+const API_BASE = "https://codetykoons.onrender.com/api";
 const slug = new URLSearchParams(location.search).get("slug");
 
 function escapeHtml(value="") {

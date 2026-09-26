@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api";
+const API = "https://codetykoons.onrender.com/api";
 
 let token =
   localStorage.getItem("codetykoons_admin_token") || "";
