@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CodeTykoons Blog Admin</title>
+
+    <link rel="stylesheet" href="css/admin.css" />
+  </head>
+
+  <body>
+    <!-- ================================
+     LOGIN VIEW
+================================ -->
+
+    <div id="loginView" class="login-view">
+      <div class="login-card">
+        <div class="brand">Code<span>Tykoons</span></div>
+
+        <p class="muted">Blog Administration</p>
+
+        <form id="loginForm">
+          <!-- Email -->
+
+          <label for="loginEmail"> Email </label>
+
+          <input
+            id="loginEmail"
+            type="email"
+            required
+            placeholder="admin@codetykoons.com"
+          />
+
+          <!-- Password -->
+
+          <label for="loginPassword" class="password-label"> Password </label>
+
+          <div class="password-field">
+            <input
+              id="loginPassword"
+              type="password"
+              required
+              placeholder="Password"
+              autocomplete="current-password"
+            />
+
+            <button
+              type="button"
+              id="passwordToggle"
+              class="password-toggle"
+              aria-label="Show password"
+              title="Show password"
+            >
+              <!-- Eye Open -->
+
+              <svg
+                id="eyeOpen"
+                class="eye-icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  d="M2.5 12s3.5-6 9.5-6 9.5 6 9.5 6-3.5 6-9.5 6-9.5-6-9.5-6Z"
+                />
+
+                <circle cx="12" cy="12" r="2.8" />
+              </svg>
+
+              <!-- Eye Off -->
+
+              <svg
+                id="eyeOff"
+                class="eye-icon hidden"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path d="M3 3l18 18" />
+
+                <path
+                  d="M10.6 6.2A9.6 9.6 0 0 1 12 6c6 0 9.5 6 9.5 6a16.8 16.8 0 0 1-3.1 3.7"
+                />
+
+                <path
+                  d="M6.1 6.1C3.8 7.8 2.5 12 2.5 12s3.5 6 9.5 6c1.5 0 2.8-.3 4-.9"
+                />
+
+                <path d="M9.9 9.9a3 3 0 0 0 4.2 4.2" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Login -->
+
+          <button class="btn primary login-submit" type="submit">Login</button>
+
+          <!-- Back to Website -->
+
+          <a href="../index.html" class="back-website-btn">
+            <span>←</span>
+            Back to Website
+          </a>
+
+          <!-- Login Message -->
+
+          <p id="loginMessage" class="message"></p>
+        </form>
+      </div>
+    </div>
+
+    <!-- ================================
+     ADMIN APP
+================================ -->
+
+    <div id="appView" class="app hidden">
+      <!-- SIDEBAR -->
+
+      <aside class="sidebar">
+        <div class="brand">Code<span>Tykoons</span></div>
+
+        <nav>
+          <button data-page="dashboard" class="nav-item active">
+            Dashboard
+          </button>
+
+          <button data-page="blogs" class="nav-item">Blogs</button>
+
+          <button data-page="editor" class="nav-item">+ Add Blog</button>
+        </nav>
+
+        <button id="logoutBtn" class="logout">Logout</button>
+      </aside>
+
+      <!-- MAIN -->
+
+      <main class="main">
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+          <div>
+            <h1 id="pageTitle">Dashboard</h1>
+
+            <p>Manage your CodeTykoons blogs.</p>
+          </div>
+
+          <button id="topAdd" class="btn primary">+ Add Blog</button>
+        </header>
+
+        <!-- DASHBOARD -->
+
+        <section id="dashboardPage" class="page">
+          <div class="stats">
+            <div class="stat">
+              <span> Total Blogs </span>
+
+              <strong id="totalCount"> 0 </strong>
+            </div>
+
+            <div class="stat">
+              <span> Published </span>
+
+              <strong id="publishedCount"> 0 </strong>
+            </div>
+
+            <div class="stat">
+              <span> Drafts </span>
+
+              <strong id="draftCount"> 0 </strong>
+            </div>
+          </div>
+
+          <div class="panel">
+            <div class="panel-head">
+              <h2>Recent Blogs</h2>
+
+              <button class="text-btn" data-page="blogs">View all</button>
+            </div>
+
+            <div id="recentBlogs" class="table-wrap"></div>
+          </div>
+        </section>
+
+        <!-- ALL BLOGS -->
+
+        <section id="blogsPage" class="page hidden">
+          <div class="panel">
+            <div class="panel-head">
+              <h2>All Blogs</h2>
+
+              <button class="btn primary" id="listAdd">+ Add Blog</button>
+            </div>
+
+            <div id="allBlogs" class="table-wrap"></div>
+          </div>
+        </section>
+
+        <!-- BLOG EDITOR -->
+
+        <section id="editorPage" class="page hidden">
+          <div class="panel editor-panel">
+            <div class="panel-head">
+              <h2 id="editorTitle">Add Blog</h2>
+            </div>
+
+            <form id="blogForm" enctype="multipart/form-data">
+              <input type="hidden" id="blogId" />
+
+              <input type="hidden" id="existingImage" />
+
+              <div class="form-grid">
+                <label>
+                  Title
+
+                  <input id="title" name="title" required />
+                </label>
+
+                <label>
+                  Category
+
+                  <input id="category" name="category" value="Technology" />
+                </label>
+
+                <label>
+                  Author
+
+                  <input id="author" name="author" value="CodeTykoons" />
+                </label>
+
+                <label>
+                  Status
+
+                  <select id="status" name="status">
+                    <option value="draft">Draft</option>
+
+                    <option value="published">Published</option>
+                  </select>
+                </label>
+              </div>
+
+              <label>
+                Short Description
+
+                <textarea
+                  id="shortDescription"
+                  name="short_description"
+                  rows="3"
+                ></textarea>
+              </label>
+
+              <label>
+                Full Content
+
+                <textarea
+                  id="content"
+                  name="content"
+                  rows="12"
+                  required
+                  placeholder="Write your blog content here..."
+                ></textarea>
+              </label>
+
+              <label>
+                Featured Image
+
+                <input
+                  id="image"
+                  name="image"
+                  type="file"
+                  accept=".jpg,.jpeg,.png,.webp,.gif"
+                />
+              </label>
+
+              <div id="imagePreview" class="image-preview"></div>
+
+              <div class="form-actions">
+                <button type="button" class="btn ghost" id="cancelEdit">
+                  Cancel
+                </button>
+
+                <button type="submit" class="btn primary" id="saveBtn">
+                  Save Blog
+                </button>
+              </div>
+
+              <p id="formMessage" class="message"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="js/admin.js"></script>
+  </body>
+</html>
